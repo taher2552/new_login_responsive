@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* general css start  */
+
+:root {
+    --white: #fff;
+    --acc-color: #17479E;
+    --border-color: #dcdcdc;
+    --light-grey: #AAA;
+    --active-bg: #C7DBFF;
+}
+
+.common-login-fonts {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: -0.02563rem;
+}
+
+/* general css start ends */
+
+/* login password page css starts */
+
+.main-container {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-logo {
+    margin-top: 0.5rem;  
+}
+
+.main-welcome {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+}
+
+.main-section {
+    width: 100%;
+}
+
+.welcome-section {
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0rem;
+}
+
+.main-create-account {
+    color: var(--secondary, #505050);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.main-cards {
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin:0.9rem 1rem;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+.main-create-account a {
+    text-decoration: none;
+    color: var(--acc-color);
+    cursor: pointer;
+}
+
+.main-user-icon {
+    margin-right: 0.88rem;
+}
+
+.main-phn-section {
+    width: 100%;
+}
+
+.main-phone {
+    color: var(--light-grey);
+    font-size: 0.65rem;
+}
+
+.main-phone-input {
+    font-size: 0.875rem;
+    outline: none;
+    border: none; 
+    width: 100%;
+}
+
+
+
+
+.button-cards {
+    display: flex;
+    flex-direction: column; /* Change to column */
+    align-items: center;
+    justify-content: start;
+    margin: 1rem;
+}
+
+.button-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust button spacing */
+    width: 100%; /* Make the button section take full width */
+}
+
+.main-btn {
+    text-align: center;
+    width: 48%;
+    height: 3.625rem;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.main-active-btn {
+    background-color: var(--active-bg);
+}
+
+
+
+.pwd-button{
+    margin-right: 0.5rem;
+}
+
+.pwd-button a{
+    border: none;
+    text-decoration: none;
+}
+
+.button-login {
+    width: 100%; 
+    margin-top: 0.9rem; 
+    border: 1px solid var(--acc-color);
+    color: var(--acc-color);
+}
+
+.login-btn {
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+
+/* login password page css ends */
+
+/*login otp section css  */
+
+.otp-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.otp-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.otp-box {
+    width: 3.5rem;
+    height: 3rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp-input {
+    font-size: 0.875rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* login otp section css ends */
+
+
+/* register page additional css starts */
+
+
+.main-select {
+    padding: 0;
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    width: 100%;
+    font-size: 0.875rem;
+    outline: none;
+    cursor: pointer;
+    padding-left: 0.88rem;
+    background:none;
+}
+
+.main-sports{
+    padding-left: 0.88rem;
+}
+/* register page additional css ends */
+
+/* otp page 2 additional css starts */
+
+.otp-mobile-no{
+    font-weight: 700;
+}
+/* otp page 2 additional css ends */
+
+
+@media (max-width: 300px) {
+    .main-create-account {
+        font-size: 0.6rem;
+    }
+}
+
+/* @media (min-width:480px) {
+    #body {
+        overflow: visible;
+    }
+} */
+
+
+/* parsley css */
+input.parsley-success,select.parsley-success,textarea.parsley-success{color:#468847;background-color:#dff0d8;border:1px solid #d6e9c6}input.parsley-error,select.parsley-error,textarea.parsley-error{color:#b94a48;background-color:#f2dede;border:1px solid #eed3d7}.parsley-errors-list{margin:2px 0 3px;padding:0;list-style-type:none;font-size:.9em;line-height:.9em;opacity:0;color:#b94a48;transition:all .3s ease-in;-o-transition:all .3s ease-in;-moz-transition:all .3s ease-in;-webkit-transition:all .3s ease-in}.parsley-errors-list.filled{opacity:1}
+
+.success {
+    color: #4F8A10;
+}
+
+.error{
+    color: #D8000C;
+}
+
+.main-btn {
+    text-decoration: none;
+    color: #000;
+    padding: 19px;
+}
+
+.alert-danger{color:#D8000C; padding-top: 12px;}

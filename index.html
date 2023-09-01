@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- font dm sans link  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <section class="main-container">
+         <div class="main-box">
+         <div class="image-container">
+            <img src="player.png" alt="">
+         </div>
+         <div class="main-logo">
+            <img src="logo.svg" alt="">
+         </div>
+         <div class="main-section">
+            <div class="welcome-section">
+               <p class="common-fonts main-welcome">Login</p>
+               <p class="common-fonts main-create-account">New to BookMyPlayer? <a href="http://localhost/bookmyplayer.com/user/register">Sign Up</a></p>
+            </div>
+            <form autocomplete="off" method="post" action="http://localhost/bookmyplayer.com/user/loginAction" class="login-form" >
+                <div class="msgError" style="text-align: center;">
+                                    </div>
+                <input type="hidden" name="login_type" class="login_type" value="login_with_password">
+                <div class="main-cards">
+                    <div class="main-card-img">
+                        <img src="user.svg" alt="" class="main-user-icon">
+                    </div>
+                    <div class="main-phn-section">
+                        <p class="common-fonts main-phone">Phone Number</p>
+                        <input type="number" name="phone" class="common-fonts main-phone-input" placeholder="Enter Phone Number" value="" required autocomplete="off">
+                                            </div>
+                </div>
+                <div class="main-cards password-block" >
+                    <div class="main-card-img">
+                        <img src="lock.svg" alt="" class="main-user-icon">
+                    </div>
+                    <div class="main-phn-section">
+                        <p class="common-fonts main-phone">Password</p>
+                        <input type="password" name="password" class="common-fonts main-phone-input password-field" placeholder="********" value="" required autocomplete="off">
+                                            </div>
+                </div>
+
+                <div class="button-cards">
+                    <div class="button-section">
+                        <button href="#" class="common-fonts main-btn main-active-btn pwd-button">Password</button>
+                        <button href="#" class="common-fonts main-btn pwd-button">
+                            <a href="http://localhost/bookmyplayer.com/user/login_with_otp" class="common-fonts main-btn otp-btn"  >Login With OTP</a>
+                        </button>
+
+                    </div>
+                    <div class="button-login loginBtnBlock">
+                        <button class="common-fonts login-btn loginBtn" name="login" type="submit">Login</button>
+                    </div>
+                </div>
+                <input type="hidden" name="csrf_test_name" value="e93f9e50d254a1041265bea06712f8d8">
+            </form>
+         </div>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $(document).ready(function(){
+        $('.login-form').parsley();
+    });
+
+  </script>
+   </body>
+</html>
